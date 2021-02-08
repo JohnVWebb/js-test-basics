@@ -7,13 +7,18 @@
 // array.Inside the array, include at least 4 values.
 let goodDoggo = {
   //your code in here
-}
+  name: "Doge",
+  legs: 4,
+  tail: true,
+  likes: [2, 3, 7, 1]
+};
 
 
 // write a function that returns the value of the legs property on your dog object using dot notation.
 function howManyLegs() {
   // your code inside here
   // don't forget to use the return keyword
+  return goodDoggo.legs;
 }
 
 // Cat Challenges
@@ -30,6 +35,8 @@ let cat = {
 // the value of the name property.
 function renameCat() {
   // your code inside here
+  cat['name'] = "Kevin"
+  return cat.name;
 }
 
 // Create a function that uses dot or bracket notation to create a property 
@@ -38,6 +45,8 @@ function renameCat() {
 
 function colorTheCat() {
   // your code inside here
+  cat.color = "orange";
+  return cat.color;
 }
 
 // Delete the whiskers property off of the cat object. You may use either dot or bracket notation.
@@ -49,4 +58,7 @@ function colorTheCat() {
 
 function returnIndex(cat) {
   // your code inside here
+  delete cat.whiskers;
+  return cat.likes[3];
+  console.log(cat);
 }
